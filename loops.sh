@@ -12,13 +12,14 @@ then
     echo "you do not have sudo access"
     exit 1
 fi
+
 for package in $@
 do
     dnf list installed $package
         if [ $? -ne 0 ]
         then
-            dnf install $package
-            VALIDATE $? Installing $package
+            dnf install $package -y
+            VALIDATE $? "(Installing $package)"
         else
             echo "$package already installed"
         fi

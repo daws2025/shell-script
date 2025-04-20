@@ -19,7 +19,7 @@ do
         if [ $? -ne 0 ]
         then
             dnf install $package -y
-            VALIDATE $? "Installing ($package)"
+            VALIDATE $? ("Installing $package")
         else
             echo "$package already installed"
         fi

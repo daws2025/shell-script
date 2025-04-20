@@ -5,3 +5,4 @@ if($*<2)
     echo "arguments provided must be two"
 else
     SUM=($NUMBER1+$NUMBER2)
+fi

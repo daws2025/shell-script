@@ -1,3 +1,3 @@
 #!/bin/bash
-PLAYERS=("RAM","SIRI","HARI")
+PLAYERS=("ram","siri","hari")
 echo "first player:${PLAYERS[0]}"

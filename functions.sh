@@ -7,6 +7,7 @@ then
     exit 1
 else
     echo "$2 is success"
+fi
 if [ $USERID -ne 0 ]
 then
     echo "you do not have root access"
@@ -20,6 +21,5 @@ dnf list installed mysql
     else
         echo "mysql already installed"
     fi
-
 
 

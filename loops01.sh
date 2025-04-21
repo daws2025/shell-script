@@ -7,6 +7,7 @@ then
 else
     echo "$2 is success"
 fi
+
 if [ $USERID -ne 0 ]
 then
     echo "you don't have root access"

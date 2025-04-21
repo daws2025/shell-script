@@ -1,5 +1,5 @@
 #!/bin/bash
-USERID= $(id -u)
+USERID=$(id -u)
 VALIDATE()
 if [ $1 -ne 0 ]
 then
